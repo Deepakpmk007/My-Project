@@ -1,0 +1,355 @@
+body {
+  background-color: #000;
+  color: #ffff;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 100vh) 20vh;
+  padding: 0;
+  margin: 0;
+}
+
+.intro {
+  grid-column: 1/9;
+  grid-row: 1/2;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.hello {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  font-size: 50px;
+  font-family: "Ubuntu", sans-serif;
+  animation-name: intro;
+  animation-duration: 3s;
+  transition: all 0.7s ease-in-out;
+}
+.name {
+  position: absolute;
+  top: 100px;
+  left: 200px;
+  font-size: 120px;
+  font-family: "Bree Serif", serif;
+  background: -webkit-linear-gradient(#3bcfd4, #fc9305, #f20094);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-name: name;
+  animation-duration: 4.5s;
+}
+.pra {
+  position: absolute;
+  top: 300px;
+  left: 200px;
+  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
+  width: 900px;
+  animation-name: pra;
+  animation-duration: 4s;
+}
+.scroll-btn {
+  position: absolute;
+  top: 580px;
+  left: 200px;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 900;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #023e8a;
+  background-color: transparent;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.intro > img {
+  width: 250px;
+  height: 500px;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.img-1 {
+  position: relative;
+  top: 30px;
+  left: 570px;
+  z-index: 0;
+  animation-name: img;
+  animation-duration: 2s;
+}
+.img-2 {
+  position: relative;
+  top: -40px;
+  left: 500px;
+  animation-name: img;
+  animation-duration: 3.5s;
+}
+.img-3 {
+  position: relative;
+  top: -90px;
+  left: 550px;
+  animation-name: img;
+  animation-duration: 4.5s;
+}
+
+.intro > img:hover {
+  z-index: 1;
+  border: #ffff solid 3px;
+  padding: 4px;
+}
+
+/* my skill */
+
+.my-skill {
+  padding-top: 4rem;
+  grid-column: 1/9;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.p1 {
+  position: relative;
+  left: 200px;
+  font-family: "Bree Serif", serif;
+  letter-spacing: 3px;
+}
+.p2 {
+  position: relative;
+  width: 500px;
+  left: 200px;
+  font-family: "Ubuntu", sans-serife;
+  font-size: 40px;
+}
+.my--project {
+  position: relative;
+  left: 200px;
+  font-family: "Ubuntu", sans-serife;
+  font-weight: 900;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #023e8a;
+  background-color: #000;
+  color: #ffff;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.my-skill-1 {
+  grid-row: 2/3;
+  grid-column: 5/9;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+.heading-my-skill {
+  position: relative;
+  top: 20px;
+  font-family: "Lexend Peta", sans-serif;
+  letter-spacing: 4px;
+  font-weight: 400;
+  background: -webkit-linear-gradient(#3bcfd4, #fc9305, #f20094);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.p-my-skill {
+  width: 410px;
+  height: 100px;
+  font-size: 1.2rem;
+  background-color: #f0e9e151;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 40px;
+  font-family: "Ubuntu", sans-serife;
+  font-weight: 600;
+  transition: all 0.6s ease;
+}
+.p-my-skill:hover {
+  transform: translateX(20px);
+}
+
+.my--life {
+  color: #ffff;
+  grid-column: 1/9;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+}
+
+.taps--btn {
+  grid-column: 2/12;
+  grid-row: 2/2;
+  justify-content: center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+}
+.btn--tap {
+  width: 200px;
+  padding: 10px 5px 10px 5px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all 300ms ease-in-out;
+}
+.tap--contents {
+  grid-column: 2/12;
+  grid-row: 3/8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 50px;
+  font-family: "Sacramento", cursive;
+}
+.tap--content {
+  display: grid;
+  grid-template-columns: 1fr 700px;
+  width: 900px;
+  font-size: 2rem;
+  align-items: center;
+  position: relative;
+  left: 100px;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.5rem;
+}
+.tap--content > img {
+  width: 300px;
+  border-radius: 30px;
+  margin-right: 20px;
+  box-shadow: 5px 5px 50px #90e0ef;
+}
+
+.tap--operation--1 {
+  display: none;
+}
+.tap--operation--2 {
+  display: none;
+}
+.tap--operation--3 {
+  display: none;
+}
+
+.btn--tap-1 {
+  background-color: #f07167;
+}
+
+.btn--tap-2 {
+  background-color: #57cc99;
+}
+.btn--tap-3 {
+  background-color: #f4a261;
+}
+
+.btn--active {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 50px #ffff;
+}
+
+.btn--tap-1:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 50px #f07167;
+}
+.btn--tap-2:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 50px #57cc99;
+}
+.btn--tap-3:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 50px #f4a261;
+}
+.tap--active {
+  display: grid;
+}
+.my {
+  font-size: 3rem;
+  letter-spacing: 2rem;
+  grid-column: 1/5;
+  font-family: "Just Another Hand", cursive;
+  position: relative;
+  left: 5rem;
+}
+
+.foot {
+  display: flex;
+  grid-column: 1/9;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.foot > i {
+  padding-left: 2rem;
+}
+
+.logo-1 {
+  color: #3f37c9;
+}
+.logo-2 {
+  color: #f72585;
+}
+.logo-3 {
+  color: #57cc99;
+}
+.logo-4 {
+  color: #c81d25;
+}
+
+@keyframes intro {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 100;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes name {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 100;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes pra {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 100;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes img {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  80% {
+    opacity: 80;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 100;
+    transform: translateX(0px);
+  }
+}
