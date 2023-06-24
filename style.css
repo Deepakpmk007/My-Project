@@ -305,6 +305,10 @@ body {
 .logo-4 {
   color: #c81d25;
 }
+a {
+  text-decoration: none;
+  padding-left: 30px;
+}
 
 @keyframes intro {
   from {
@@ -351,5 +355,102 @@ body {
   100% {
     opacity: 100;
     transform: translateX(0px);
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    width: 360px;
+    height: 900px;
+  }
+  .intro {
+    height: 600px;
+    width: 360px;
+    background-color: #f07167;
+  }
+  .hello {
+    font-size: 30px;
+    left: 50px;
+  }
+  .name {
+    font-size: 60px;
+    left: 50px;
+    top: 100px;
+  }
+  .pra {
+    font-size: 20px;
+    width: 200px;
+    left: 50px;
+    top: 250px;
+  }
+  .scroll-btn {
+    font-size: 10px;
+    left: 50px;
+    top: 560px;
+  }
+  .intro > img {
+    width: 100px;
+    left: 50px;
+    animation: none;
+    display: none;
+  }
+
+  .my-skill {
+    font-size: 20px;
+    width: 360px;
+    height: 450px;
+  }
+  .p1 {
+    position: absolute;
+    left: 50px;
+    top: 650px;
+    font-size: 10px;
+  }
+  .p2 {
+    position: absolute;
+    left: 50px;
+    top: 690px;
+    font-size: 20px;
+    width: 220px;
+  }
+  .my-skill-1 {
+    position: absolute;
+    left: 50px;
+    top: 750px;
+  }
+  .heading-my-skill {
+    font-size: 10px;
+  }
+  .p-my-skill {
+    font-size: 15px;
+    height: 50px;
+    width: 220px;
+    padding: 0;
+    background-color: transparent;
+    font-weight: 200;
+  }
+  .JAVASCRIPT {
+    position: relative;
+    top: 20px;
+  }
+  .my--project {
+    font-size: 15px;
+    font-weight: 300;
+    left: 50px;
+    top: 350px;
+  }
+  .my--life {
+    font-size: 15px;
+    height: 600px;
+
+    display: none;
+  }
+
+  .foot {
+    background-color: transparent;
+    height: 50px;
+    font-size: 1.5rem;
+    position: relative;
+    left: -50px;
   }
 }
